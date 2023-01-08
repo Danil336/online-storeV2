@@ -1,0 +1,146 @@
+.form_background {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(30, 27, 27, 0.6);
+  z-index: 200;
+  text-align: center;
+
+  display: none;
+}
+.show_form {
+  display: block;
+}
+.form_popup {
+  margin: 120px auto 0 auto;
+  width: 450px;
+  height: 500px;
+  background-color: white;
+  border: 2px solid #00a046;
+  border-radius: 6px;
+  padding: 15px;
+}
+.form_title {
+  font-size: 20px;
+}
+.about_man {
+  margin: 30px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.input_box {
+  text-align: left;
+  width: 100%;
+  display: flex;
+}
+.input_field{
+  border-bottom: 1px solid #00a046;
+  height: 30px;
+  width: 60%;
+  padding: 0 0 0 5px;
+}
+.error_field{
+  border-bottom: 2px solid red;
+}
+.error_message{
+  color: red;
+  padding: 13px 0 0 20px;
+
+  display: none;
+}
+.card_content{
+  display: flex;
+}
+.about_card {
+  margin: 35px 0 0 0;
+  width: 260px;
+  height: 140px;
+  background-color: rgb(33, 29, 62);
+  border-radius: 7px;
+}
+
+.input_card {
+  margin: 30px 0 0 0;
+  padding: 0;
+  text-align: center;
+  width: 75%;
+  height: 25px;
+}
+.input_card_else{
+  margin: 35px 0 0 0;
+  padding: 0;
+  text-align: center;
+  width: 60px;
+  height: 20px;
+}
+.card_else {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card_error{
+  margin: 95px 0 0 25px;
+  color: red;
+
+  display: none;
+}
+
+.show_error {
+  display: block;
+}
+
+.submit_btn{
+  font-size: 16px;
+  margin: 30px 0 0 0;
+  width: 140px;
+  height: 35px;
+  background-color: #10af55;
+  color: white;
+  border-radius: 4px;
+}
+
+.success{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(30, 27, 27, 0.6);
+  z-index: 201;
+
+  display: none;
+}
+.show_saccess {
+  display: block;
+}
+
+.success_message{
+  width: 250px;
+  height: 80px;
+  background-color: white;
+  margin: 250px auto;
+  text-align: center;
+  padding: 28px 0 0 0;
+  font-size: 24px;
+  border-radius: 7px;
+  color:#00a046;
+  border: 1px solid #03863b;
+}
+
+.footer{
+  width: 100%;
+  height: 60px;
+  background-color: #03863b;
+  border-top: 1px solid black;
+}
+
+.designed{
+  color: white;
+  font-size: 20px;
+  text-align: right;
+  padding: 20px;
+  // margin: 20px 0 0 0;
+}

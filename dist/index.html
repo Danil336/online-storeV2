@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header_items">
+          <div class="header_logo">
+            <a href="#" class="">
+              <img
+                src="./assets/images/logo.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="header_search">
+            <form class="search_form" action="#">
+              <div class="search_line_inner">
+                <div class="lense_icon_div">
+                  <img
+                    class="leanse"
+                    src="./assets/images/search_leanse.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="input_div">
+                  <input placeholder="Я ищу..." class="input" type="text" />
+                </div>
+              </div>
+              <button class="search_button">Найти</button>
+            </form>
+          </div>
+          <div class="all_bin">
+          <div class="header_bin">
+            <a href="#">
+              <img src="./assets/images/bin_main.svg"/>
+            </a>
+          </div>
+          <div class="bin_notice">0</div>
+        </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <div class="nav_decorate">
+          <div
+            class="where_i"
+            style="background-image: url('./assets/images/right_arrow.svg')"
+          >
+            <div class="home_ico">
+              <img src="./assets/images/house.svg" alt="" />
+            </div>
+            <div class="categori_name">Все товары</div>
+          </div>
+          <div class="actual_categori">Все товары</div>
+        </div>
+      </div>
+      <div class="sticky_nav">
+      <div class="wrapper">
+        <div class="easy_sort_sticky">
+          <div class="reset_all_item">
+            <button>Сбросить</button>
+          </div>
+          <div class="sort_choise_item">
+            <div class="how_mach_found">Найдено: 000 товаров</div>
+          <div class="sort_choise">
+            <button easy-filter="true" class="dropdown-toggle">
+              <div class="button_title" easy-filter="true">Сортировать по</div>
+              <div easy-filter="true" class="button_arrow">
+                <img easy-filter="true" src="./assets/images/down_arrow.svg" alt="" />
+              </div>
+            </button>
+            <div id="dropdown" class="dropdown-menu">
+              <button class="dropdown-item by_rating">По рейтингу</button>
+              <button class="dropdown-item by_cheap">От дешёвого</button>
+              <button class="dropdown-item by_exp">От дорогого</button>
+              <!-- <button class="dropdown-item by_new">Новинки</button> -->
+            </div>
+          </div>
+          <div class="sort_grid">
+            <div class="grid_variant grid_variant_one" grid-small="true">
+              <img class="grid_small" grid-small="true"
+                src="https://img.icons8.com/sf-regular-filled/48/null/grid.png"
+              />
+            </div>
+            <div grid-big="true" class="grid_variant grid_variant_two actual_grid">
+              <img grid-big="true" class="grid_big" src="https://img.icons8.com/ios-filled/50/null/activity-grid--v1.png"/>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+      <div class="wrapper">
+        <div class="catigories_and_goods">
+          <div class="left_nav">
+          <div class="category_all type_category">
+            <div class="categories dropdown-toggle-category">
+              <div class="categiry_title_div">
+                <div class="category_title_main">Категория <span class="category_main_counter">20</span></div>
+                <div class="category_arrow">
+                  <img src="./assets/images/arrow_up.svg"/></div>
+              </div>
+            </div>
+            <div class="dropdown_menu_category">
+              <!-- <div class="category_variant" onclick="document.getElementById('checkbox').click()">
+                <div class="category_checkbox">
+                  <input type="checkbox" id="checkbox">
+                </div>
+                <div class="category_title">Телефоны <span>(123)</span></div>
+              </div> -->
+            </div>
+          </div>
+          <div class="category_all brand_category brand_category2">
+            <div class="categories dropdown-toggle-category dropdown-toggle-category2">
+              <div class="categiry_title_div">
+                <div class="category_title_main">Бренд <span class="brand_main_counter">20</span></div>
+                <div class="category_arrow">
+                  <img src="./assets/images/arrow_up.svg"/></div>
+              </div>
+            </div>
+            <div class="dropdown_menu_category dropdown_menu_category2">
+              <!-- <div class="category_variant" onclick="document.getElementById('checkbox').click()">
+                <div class="category_checkbox">
+                  <input type="checkbox" id="checkbox">
+                </div>
+                <div class="category_title">Телефоны <span>(123)</span></div>
+              </div> -->
+            </div>
+          </div>
+          <div class="category_all type_category">
+            <div class="categories dropdown-toggle-category dropdown-toggle-category3">
+              <div class="categiry_title_div">
+                <div class="category_title_main">Цена <span class="category_main_counter"></span></div>
+                <div class="category_arrow">
+                  <img src="./assets/images/arrow_up.svg"/></div>
+              </div>
+            </div>
+            <div class="dropdown_menu_category dropdown_menu_category3 filter-price">
+              <div class="filter-price_title"></div>
+              <div class="inputs_and_button">
+              <div class="filter-price_inputs">
+                <input type="number" value="400" class="filter-price_input" min="400" max="69960" id="input-0">
+                <div class="stick">—</div>
+                <input type="number" value="69960" class="filter-price_input" min="400" max="69960" id="input-1">
+              </div>
+              <button class="submBtn">ОК</button>
+            </div>
+              <div class="filter-price_slider" id="range-slider"></div>
+            </div>
+          </div>
+
+          <div class="category_all type_category">
+            <div class="categories dropdown-toggle-category dropdown-toggle-category4">
+              <div class="categiry_title_div">
+                <div class="category_title_main">В наличии <span class="category_main_counter"></span></div>
+                <div class="category_arrow">
+                  <img src="./assets/images/arrow_up.svg"/></div>
+              </div>
+            </div>
+            <div class="dropdown_menu_category dropdown_menu_category4 filter-price">
+              <div class="filter-price_title"></div>
+              <div class="inputs_and_button">
+              <div class="filter-price_inputs">
+                <input type="number" value="2" class="filter-price_input filter-price_input2" min="2" max="150" id="input-2">
+                <div class="stick">—</div>
+                <input type="number" value="150" class="filter-price_input filter-price_input2" min="2" max="150" id="input-3">
+              </div>
+              <button class="submBtn submBtn2">ОК</button>
+            </div>
+              <div class="filter-price_slider filter-price_slider2" id="range-slider2"></div>
+            </div>
+          </div>
+        </div>
+          <div class="goods">
+            <!-- <div class="good_card">
+              <div class="card_picture">
+                <img src="" alt="">
+              </div>
+              <div class="card_title">Mobile Phone</div>
+              <div class="card_rating">4.92</div>
+              <div class="card_price">999</div>
+              <div class="stock">8</div> -->
+
+              <!-- <div class="nothing">Ничего не найдено :(</div> -->
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="wrapper">
+            <div class="designed">Designed by: ilyusheesh</div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <div class="good-info_popup">
+      <div class="wrapper">
+      <div class="popup_header">
+      <div class="good_path" style="background-image: url('./assets/images/right_arrow.svg')">
+        <div class="home_ico home_ico2">
+          <img src="./assets/images/house.svg" alt="" />
+        </div>
+        <div class="path_step2">Laptops</div>
+        <div class="path_step3">Samsung</div>
+        <div class="path_step4">Samsung Galaxy Book</div>
+      </div>
+      <div class="big_good_title">Samsung Galaxy Book</div>
+    </div>
+    <div class="popup_main">
+      <div class="popup_item left_info">
+        <div class="main_good_photo">
+          <img src="" alt="">
+        </div>
+        <div class="sub_good_photos">
+          <div class="sub_photo">
+            <img src="" alt="">
+          </div>
+          <div class="sub_photo">
+            <img src="" alt="">
+          </div>
+          <div class="sub_photo">
+            <img src="" alt="">
+          </div>
+          <div class="sub_photo">
+            <img src="" alt="">
+          </div>
+          <div class="sub_photo">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="popup_item full_descriprion">
+        <div class="buy_good">
+          <div class="good_price">
+            99999₴
+          </div>
+          <div class="about_bin">
+          <div class="good_to_cart">
+            <div put-bin="true" class="put_in_bin put_in_bin2"><img class="put_image" put-img="true" put-bin="true" src="./assets/images/bin_green.svg" alt=""></div>
+          </div>
+          <div class="in_bin_text">В корзину</div>
+        </div>
+        </div>
+        <div class="good_description">
+          <div class="title_include">Desctiption:</div>
+          <div class="description_text text_include">Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.</div>
+        </div>
+        <div class="title_include">
+          <div class="rating_title title_include">Rating:</div>
+          <div class="rating_text text_include">⭐4.02</div>
+        </div>
+        <div class="good_brand">
+          <div class="title_include">Brand:</div>
+          <div class="brand_text text_include">Samsung</div>
+        </div>
+        <div class="good_category">
+          <div class="title_include">Category:</div>
+          <div class="category_text text_include">Laptop</div>
+        </div>
+        <div class="good_stock">
+          <div class="title_include">In stock:</div>
+          <div class="stock_text text_include">50</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="bin">
+      <div class="bin_title">Корзина</div>
+      <div class="bin_is_empty">
+        <div class="empty_img">
+          <img src="https://xl-static.rozetka.com.ua/assets/img/design/modal-cart-dummy.svg" alt="">
+        </div>
+        <div class="empty_title">Корзина пуста</div>
+        <div class="empty_text">Но это никогда не поздно исправить :)</div>
+      </div>
+      <div class="purchased_goods">
+        <!-- <div class="purchased_good">
+          <div class="good_row">
+            <div class="about_b_good">
+            <div class="good_b_image">
+              <img src="" alt="">
+            </div>
+            <div class="good_b_title">Самсунг гелекси их2</div>
+          </div>
+          <div class="remove_b_good">
+            🗑 <span>Удалить</span>
+          </div>
+          </div>
+          <div class="good_row2">
+            <div class=""></div>
+            <div class="price_b"></div>
+            <div class="good_b_count">
+              <button class="count_equipment">-</button>
+              <div class="count_equipment good_b_howmach">1</div>
+              <button class="count_equipment">+</button>
+            </div>
+            <div class="good_b_price">99999₴</div>
+            </div>
+          </div> -->
+        </div>
+        <div class="final_sun_wrapper">
+        <div class="pay_price">
+          <div class="final_sum">00000₴</div>
+          <button class="buy_btn">Оформить заказ</button>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="form_background">
+      <div class="form_popup">
+        <div class="form_title">Персональные данные</div>
+        <form class="validation_form" action="">
+          <div class="about_man">
+            <div class="input_box">
+              <input name type="text" maxlength="15" class="input_field" placeholder="Имя">
+              <div class="error_message">Ошибка!</div>
+            </div>
+            <div class="input_box">
+              <input surname type="text" maxlength="15" class="input_field" placeholder="Фамилия">
+              <div class="error_message">Ошибка!</div>
+            </div>
+            <div class="input_box">
+              <input phone type="text" maxlength="15" class="input_field" placeholder="Телефон">
+              <div class="error_message">Ошибка!</div>
+            </div>
+            <div class="input_box">
+              <input email type="text" maxlength="30" class="input_field" placeholder="Електронная почта">
+              <div class="error_message">Ошибка!</div>
+            </div>
+          </div>
+          <div class="card_content">
+          <div class="about_card">
+            <div class="card_number">
+              <input card-number type="text" maxlength="19" class="input_field_card input_card input_number" placeholder="Номер карты">
+            </div>
+            <div class="card_else">
+              <input avalible type="text" maxlength="5" class="input_field_card input_card_else input_avalible" placeholder="Действ.">
+              <input cvv type="text" maxlength="3" class="input_field_card input_card_else" placeholder="CVV">
+            </div>
+          </div>
+            <div class="card_error">Ошибка!</div>
+          </div>
+          <button type="submit" class="submit_btn">Подтвердить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="success">
+      <div class="success_message">Спасибо за заказ!</div>
+    </div>
+  </body>
+</html>
+
+

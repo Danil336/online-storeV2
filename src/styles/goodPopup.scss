@@ -1,0 +1,126 @@
+.good-info_popup{
+  width: 100%;
+  height: calc(100vh - 72px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+
+  display: none;
+}
+
+.no_scroll{
+  overflow: hidden;
+}
+
+.popup_show{
+  display: block;
+}
+
+.good_path{
+  margin: 28px 0 0 0;
+  display: flex;
+  gap: 29px;
+  background-repeat: no-repeat;
+  background-position: 25px;
+  background-size: 9px;
+}
+
+.about_bin{
+  display: flex;
+  gap: 10px;
+}
+
+.in_bin_text{
+  margin: 12px 0 0 0;
+  font-size: 16px;
+}
+
+.home_ico {
+  cursor: pointer;
+}
+
+.path_step2 {
+  margin: 2px 0 0 0;
+}
+.path_step3 {
+  margin: 2px 0 0 0;
+}
+.path_step4 {
+  margin: 2px 0 0 0;
+}
+
+.big_good_title{
+  margin: 25px 0 0 0;
+  font-size: 34px;
+}
+
+.popup_main{
+  display: flex;
+  gap: 35px;
+
+}
+
+.main_good_photo{
+  margin: 30px 0 0 0;
+  width: 500px;
+  height: 350px;
+  & img {
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.sub_good_photos{
+  display: flex;
+  & img {
+    object-fit: contain;
+  }
+}
+
+.sub_photo{
+  margin: 20px 0 0 0;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.full_descriprion{
+  width: 100%;
+  margin: 30px 0 0 0;
+  border-bottom: .5px solid #d2d2d2;
+  border-right: .5px solid #d2d2d2;
+  border-left: .5px solid #d2d2d2;
+}
+
+.buy_good{
+ border: .5px solid #d2d2d2; 
+ padding: 15px;
+ display: flex;
+ gap: 25px;
+}
+
+.good_price{
+  font-size: 36px;
+  color: #f84147
+}
+
+.title_include{
+  margin: 15px 0 0 10px;
+  font-size: 26px;
+}
+
+.rating_title{
+  margin: 10px 0 0 0px;
+}
+
+.text_include{
+  margin: 10px 0 0 15px;
+  font-size: 16px;
+  padding: 0 10px 0 0;
+}
+
+.put_in_bin2{
+  margin: 0;
+}

@@ -1,0 +1,86 @@
+.header {
+  height: 72px;
+  width: 100%;
+  background-color: #221f1f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header_items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo {
+  margin:  15px 0 0 0;
+  height: 40px;
+  width: 240px;
+}
+
+.header_search {
+  margin: 15px 0 0 0;
+  width: 50%;
+}
+.search_form {
+  display: flex;
+  height: 40px;
+}
+.search_line_inner {
+  width: 100%;
+  display: flex;
+}
+.lense_icon_div {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 3px 0 0 3px;
+}
+.leanse{
+  width: 20px;
+}
+.input_div {
+  width: 100%;
+}
+.input {
+  height: 40px;
+  width: 100%;
+}
+.search_button {
+  border-radius: 0px 3px 3px 0px;
+  background-color: #00a046;
+  color: white;
+  width: 77px;
+  font-size: 16px;
+}
+.all_bin{
+  display: flex;
+}
+.header_bin {
+  width: 32px;
+  height: 32px;
+  margin: 20px 0 0 0;
+  border-radius: 4px;
+  transition: all .2s;
+  &:hover {
+    transition: all .2s;
+    background-color: #4f4d4d;
+  }
+}
+.bin_notice{
+  padding: 2px 0 0 4px;
+  position: absolute;
+  margin: 15px 0 0 20px;
+  width: 17px;
+  height: 17px;
+  background-color: #00a046;
+  border-radius: 50%;
+  color: white;
+  display: none;
+  user-select: none;
+}
+.is_in_bin{
+  display: block;
+}
